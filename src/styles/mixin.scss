@@ -1,0 +1,41 @@
+// mixin
+
+@mixin bg($url) { // Background picture url and size
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin center { // Center left and right, top and bottom
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin ct { // Center top and bottom
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin cl { // Center left and right
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin wh($width, $height) { // width and height
+  width: $width;
+  height: $height;
+}
+
+@mixin sc($size, $color) { // Font size, color
+  font-size: $size;
+  color: $color;
+}
+
+@mixin fj($type: space-between) { // Flex layout and child element alignment
+  display: flex;
+  justify-content: $type;
+}

@@ -1,0 +1,84 @@
+@import "./variables";
+
+@import "./mixin";
+
+page, body { // stylelint-disable-line selector-type-no-unknown
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: $bg-color;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 500px) {
+
+  html, body {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.clearfix {
+  zoom: 1;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.position-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
