@@ -4,7 +4,7 @@
 
 使用 **Taro**，我们可以只书写一套代码，再通过 **Taro** 的编译工具，将源代码分别编译出可以在不同端（微信小程序、H5、React-Native 等）运行的代码。
 
-该项目基于Taro，使用Redux，统一封装了api请求中间件，可以直接拿来使用
+该项目基于Taro，使用Redux，统一封装了api请求中间件，可以直接拿来使用[taro + redux + redux-thunk + normalizr + taro-ui]
 
 ## Stack:
 
@@ -63,3 +63,7 @@
 | `npm run template test` | Create template page
 | `taro update self or npm i -g @tarojs/cli@latest or yarn global add @tarojs/cli@latest` | Update taro cli
 | `taro update project` | Update taro dependencies
+
+## License
+
+MIT © [etwo](https://github.com/E-two)
