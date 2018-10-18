@@ -1,8 +1,16 @@
+# 前言
+
+**Taro** 是一套遵循 [React](https://reactjs.org/) 语法规范的 **多端开发** 解决方案。现如今市面上端的形态多种多样，Web、React-Native、微信小程序等各种端大行其道，当业务要求同时在不同的端都要求有所表现的时候，针对不同的端去编写多套代码的成本显然非常高，这时候只编写一套代码就能够适配到多端的能力就显得极为需要。
+
+使用 **Taro**，我们可以只书写一套代码，再通过 **Taro** 的编译工具，将源代码分别编译出可以在不同端（微信小程序、H5、React-Native 等）运行的代码。
+
+该项目基于Taro，使用Redux，统一封装了api请求中间件，可以直接拿来使用
+
 ## Stack:
 
 | Package | Description |
 | --- | --- |
-| `taro init pintushi-taro` | Create Taro apps with no build configuration.
+| `taro init taro-wx-miniapp` | Create Taro apps with no build configuration.
 | `redux` | Predictable state container for JavaScript apps
 | `redux-thunk` | An alternative side effect model for Redux apps
 | `normalizr` | Normalizes nested JSON according to a schema

@@ -1,16 +1,18 @@
 /**
- * pages template quick generation script, execute the command 'npm run template test'
+ * pages template quick generation script, execute the command 'npm run template test title'
  */
 
 const fs = require('fs'); // eslint-disable-line
 
 const dirName = process.argv[2];
+let title = process.argv[3];
 
 if (!dirName) {
   console.log('The folder name cannot be empty!');
-  console.log('The sample：npm run template test');
+  console.log('The sample：npm run template test title');
   process.exit(0);
 }
+if (!title) title = dirName;
 
 // pages template
 const indexTemplate = `import Taro, { Component } from '@tarojs/taro';
@@ -25,23 +27,29 @@ const mapStateToProps = state => ({
 }))
 export default class ${titleCase(dirName)} extends Component {
   config = {
-    navigationBarTitleText: '${dirName}',
+    navigationBarTitleText: '${title}',
   };
 
   constructor() {
     super(...arguments);
   }
 
-  state = { }
+  state = {}
 
-  componentDidMount () { }
+  componentDidMount () {}
 
-  componentWillUnmount () { }
+  componentWillUnmount () {}
+
+  componentDidShow () {}
+
+  componentDidHide () {}
+
+  componentCatchError () {}
 
   render() {
     return (
       <View className='${dirName}-page'>
-        ${dirName}
+        ${title}
       </View>
     );
   }

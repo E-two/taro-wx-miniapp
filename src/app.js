@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro';
 import '@tarojs/async-await';
 import { Provider } from '@tarojs/redux';
 
-import Index from './pages/index';
+import Home from './pages/index';
 
 import configStore from './store';
 
@@ -14,7 +14,7 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index',
+      'pages/home/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -24,7 +24,7 @@ class App extends Component {
       enablePullDownRefresh: true,
     },
     networkTimeout: {
-      request: 10000,
+      request: 20000,
       downloadFile: 10000
     }
   }
@@ -40,7 +40,7 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <Index />
+        <Home />
       </Provider>
     );
   }

@@ -31,6 +31,14 @@ class Index extends Component {
 
   componentWillUnmount () { }
 
+  componentWillReceiveProps (nextProps) {
+    console.log(this.props, nextProps);
+  }
+
+  componentDidShow () { }
+
+  componentDidHide () { }
+
   getTest = async () => {
     const { response } = await this.props.getTest({a: 1, b: 'test'});
     if (response) {

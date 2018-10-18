@@ -2,7 +2,7 @@
 	"name": "taro-wx-miniapp",
 	"version": "1.0.0",
 	"private": true,
-	"description": "a taro wx miniapp",
+	"description": "a taro wx miniapp which use middleware api",
 	"main": "index.js",
 	"scripts": {
 		"build:weapp": "taro build --type weapp",
